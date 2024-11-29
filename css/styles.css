@@ -1,0 +1,1795 @@
+/* Estilos globales */
+*{margin: 0;
+padding: 0;
+font-family: "Merriweather", serif;
+font-weight: 300;
+font-style: normal;
+}
+/* Tipografia */
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Inicio del Header */
+
+.background-foto {background-image: url(../img/foto-inicial.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+margin-bottom: 5rem;}
+
+.navbar {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* En la parte superior */
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Asegura que esté sobre otros elementos */
+    background-color: transparent !important; /* Fondo transparente inicialmente */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Línea sutil debajo */
+    transition: background-color 0.3s ease; /* Transición suave */
+
+}
+
+.navbar.scrolled {
+    background-color: white !important; /* Fondo blanco cuando se hace scroll */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea debajo */
+}
+
+.logo-blanco {
+    display: block;
+}
+
+.logo-negro {
+    display: none;
+}
+
+.navbar .nav-link {
+    font-family: "Poppins", sans-serif; /* Familia de fuente */
+    font-weight: 300; /* Peso de la fuente */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    color: white !important; /* Color blanco por defecto */
+}
+
+.navbar .nav-link:hover {
+    color: rgb(30, 24, 24) !important;
+}
+
+.navbar .nav-link.active {
+    color: #464646 !important;
+}
+
+.navbar.scrolled .nav-link {
+    color: #464646!important; /* Cambiar el color de los enlaces a negro */
+}
+
+.logo-img {
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.navbar .nav-link {
+    color: white !important; /* Color blanco cuando el fondo es transparente */
+}
+
+.navbar.scrolled .nav-link {
+    color: #464646 !important; }
+
+.navbar .nav-link:hover {
+    color: rgb(30, 24, 24) !important; 
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: #63C1C3 !important; }
+
+
+/* Estilos para el texto de Bienvenidos */
+
+.contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    text-align: center;
+    position: relative;
+}
+
+.texto-bienvenida {
+    font-family:  "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 4rem;
+}
+
+.texto-huinca {
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .background-foto {
+        background-image: url(../img/foto-inicial.png);
+        background-repeat: no-repeat;
+        background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+        background-position: center center; /* Centra la imagen en el contenedor */
+        object-fit: cover; /* Esta propiedad no es necesaria para un fondo, pero no hace daño dejarla */
+    }
+
+    .texto-bienvenida {
+        font-size: 2.5rem; /* Reduce el tamaño del texto */
+    }
+
+    .texto-huinca {
+        font-size: 4rem; /* Reduce el tamaño del texto */
+    }
+}
+
+/* Para pantallas medianas (por ejemplo, tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .background-foto {
+        background-image: url(../img/foto-inicial.png);
+        background-repeat: no-repeat;
+        background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+        background-position: center center; /* Centra la imagen en el contenedor */
+        object-fit: cover; /* Esta propiedad no es necesaria para un fondo, pero no hace daño dejarla */
+    }
+
+    .texto-bienvenida {
+        font-size: 3rem; /* Ajusta el tamaño del texto */
+    }
+
+    .texto-huinca {
+        font-size: 5rem; /* Ajusta el tamaño del texto */
+    }
+}
+
+/* Fin de estilos para el texto de Bienvenidos */
+
+  /* Fin del Header */
+
+  /* Estilos para main */
+
+  /* Sobre nosotro*/
+.seccion-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+}
+.contenedor-imagenes {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.imagen-superpuesta {
+    width: 45%; 
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;   
+    position: absolute;
+    transition: transform 0.3s;
+    border: 6px solid white;
+}
+
+.imagen1 {
+    top: -18rem;
+    left: 2rem;
+    z-index: 3; 
+}
+
+.imagen2 {
+    top: -9rem;
+    left: 18rem;
+    z-index: 2;
+}
+
+.imagen3 {
+    top: -18rem;
+    left: 14rem;
+    z-index: 1;
+}
+
+.texto-lado-derecho {
+    width: 45%;
+}
+.texto-lado-derecho h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #464646;
+    margin-bottom: 2rem;
+}
+
+.texto-lado-derecho p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #464646;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+}
+
+.boton-ver-mas {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #464646;
+    background-color: #EBFBFB;
+    border: 1px solid rgb(125, 199, 184);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton-ver-mas:hover {
+    background-color: #63C1C3;
+}
+
+.boton-ver-mas {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.parrafo-nosotros-pop-up{    
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+
+
+}
+
+.hostel-titulo-popup{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 1rem;
+
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 750px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.693); /* Fondo blanco con transparencia */
+    color: #333; /* Color del ícono de cierre */
+    border: none;
+    border-radius: 50%; /* Forma circular */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para mejor visibilidad */
+}
+
+.close-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fondo más opaco al hacer hover */
+}
+
+/* Grid de imágenes */
+.popup-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.popup-grid .large-img {
+    grid-row: 1 / span 2; /* Ocupa dos filas */
+    grid-column: 2; /* Columna central */
+}
+
+.popup-grid .small-img {
+    width: 100%;
+}
+
+.popup-grid .small-img img {
+    width: 100%;
+    height: 150px; /* Altura fija para imágenes pequeñas */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.popup-grid .large-img img {
+    width: 100%;
+    height: 310px; /* Altura personalizada para la imagen central */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Estilos para dispositivos pequeños (máx. 500px, móviles) */
+@media only screen and (max-width: 600px) {
+    .seccion-contenido {
+        flex-direction: column; /* Cambia a una columna en tablets */
+        align-items: center;
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px;
+    }
+
+    .contenedor-imagenes {
+        width: 100%; /* Reduce el ancho del contenedor */
+        display: flex;
+        flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .imagen-superpuesta {
+        width: 50%; /* Reduce el tamaño de las imágenes */
+        position: static; /* Quita el posicionamiento absoluto */
+        border-radius: 8px; /* Ajusta los bordes */
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
+    .imagen3 {
+        display: none; /* Oculta esta imagen en dispositivos móviles */
+    }    
+
+    .texto-lado-derecho {
+        width: 98%; /* Ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+    }
+
+    .texto-lado-derecho h2 {
+        font-size: 1.8rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .texto-lado-derecho p {
+        font-size: 1rem; /* Reduce ligeramente el tamaño del texto */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+
+    .boton-ver-mas {
+        padding: 8px 30px; /* Reduce el tamaño del botón */
+        font-size: 0.9rem;
+    }
+
+    .popup-grid {
+        gap: 5px;    }
+    
+
+    .popup-content {
+        margin: 20px;
+    }
+    
+    
+    .popup-grid .small-img img {
+        height: 130px; /* Altura fija para imágenes pequeñas */
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .popup-grid .large-img img {
+        height: 270px; /* Altura personalizada para la imagen central */
+        border-radius: 5px;
+    }
+
+    .parrafo-nosotros-pop-up {
+        font-size: 1rem; /* Reduce ligeramente el tamaño del texto */
+        line-height: 1.4; /* Ajusta el interlineado */
+    }
+
+    .hostel-titulo-popup {
+        font-size: 1.2rem; /* Reduce el tamaño del título */
+    }
+
+    .close-button {
+        top: 25px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
+
+/* Estilos para dispositivos medianos (501px - 1024px, tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .seccion-contenido {
+        flex-direction: column; /* Cambia a una columna en tablets */
+        align-items: center;
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px;
+    }
+
+    .contenedor-imagenes {
+        width: 100%; /* Reduce el ancho del contenedor */
+        display: flex;
+        flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .imagen-superpuesta {
+        width: 60%; /* Reduce el tamaño de las imágenes */
+        position: static; /* Quita el posicionamiento absoluto */
+        max-width: 250px;
+        margin-bottom: 30px;
+        
+    }
+    .imagen3 {
+        display: none; /* Oculta esta imagen en dispositivos móviles */
+    }   
+
+    .texto-lado-derecho {
+        width: 98%; /* Ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+    }
+
+    .texto-lado-derecho h2 {
+        font-size: 1.8rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .texto-lado-derecho p {
+        font-size: 1rem; /* Reduce ligeramente el tamaño del texto */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+
+    .boton-ver-mas {
+        padding: 8px 30px; /* Reduce el tamaño del botón */
+        font-size: 0.9rem;
+    }
+
+    .popup-grid {
+        gap: 5px;    }
+    
+
+    .popup-content {
+        margin: 20px;
+    }
+    
+    
+    .popup-grid .small-img img {
+        height: 130px; /* Altura fija para imágenes pequeñas */
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .popup-grid .large-img img {
+        height: 270px; /* Altura personalizada para la imagen central */
+        border-radius: 5px;
+    }
+
+    .parrafo-nosotros-pop-up {
+        font-size: 1rem; /* Reduce ligeramente el tamaño del texto */
+        line-height: 1.4; /* Ajusta el interlineado */
+    }
+
+    .hostel-titulo-popup {
+        font-size: 1.2rem; /* Reduce el tamaño del título */
+    }
+
+    .close-button {
+        top: 25px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
+
+  /* Fin sobre nosotros*/
+
+/* Nuestras habitaciones*/
+
+.Fondo-habitaciones{
+    background-image: url(../img/fondo-marron-final.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-top: 2rem;
+    height: 120vh;
+    width: 100%;
+    margin-bottom: 5rem; 
+} 
+
+h3{ font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+    color: #464646;
+}
+
+.otra-medida-para-H3-hab{
+padding-top: 11rem;
+margin-bottom: 3rem;
+margin-left: 2rem;
+}
+
+.div-box{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+
+}
+
+.imagen-habitaciones {
+    object-fit: cover;
+    width: 100%;       /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 200px;      /* Ajusta la altura proporcionalmente según el ancho */
+    border-radius: 1px
+    
+}
+
+.seccion-contenido-habitaciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 1rem;
+    gap: 40px;
+
+}
+
+.close-button-2 {
+    position: absolute;
+    top: 40px;
+    left: 680px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #464646; 
+    border: none;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    z-index: 1010; /* Aumentar este valor */
+}
+
+
+.close-button-2:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    margin: 10px
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-img {
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.787); /* Fondo blanco con transparencia */
+    color: #000000; /* Color del ícono de cierre */
+    border: none;
+    border-radius: 50%; /* Forma circular */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.h4-div-box{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #464646;
+text-align: center;
+
+}
+
+
+/* Botón para consultar precios (WhatsApp) */
+a.boton-ver-mas {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #464646;
+    background-color: #EBFBFB;
+    border: 1px solid rgb(125, 199, 184);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+a.boton-ver-mas:hover {
+    background-color: #63C1C3;
+}
+
+
+
+
+.estrella-marina {
+    position: absolute; /* Posiciona el div de forma absoluta */
+    top: 50%; /* Centra el div verticalmente */
+    right: 5rem; /* Lo alinea a la derecha */
+    transform: translateY(1490%); /* Ajusta para que esté exactamente centrado verticalmente */
+    width: 150px; 
+    height: auto; 
+  }
+  
+  .estrella-marina img {
+    width: 100%;
+
+  }
+
+ .habitaciones-texto{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #464646;
+
+
+ }
+
+ @media only screen and (max-width: 600px) {
+    .Fondo-habitaciones {
+        margin-top: 2rem;
+        height: 1450px;
+        width: 100%;
+    }
+    
+    h3 {
+        font-family: "Merriweather", serif;
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: #464646;
+        text-align: center;
+    }
+    
+    .otra-medida-para-H3-hab {
+        padding-top: 8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .div-box {
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        display: flex; /* Cambia a flex para mejorar la alineación */
+        flex-direction: column; /* Organiza los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        padding-bottom: 1rem;    
+    }
+    
+    .imagen-habitaciones {
+        width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+        height: 150px; /* Ajusta la altura proporcionalmente según el ancho */
+    }
+    
+    .seccion-contenido-habitaciones {
+        display: flex; /* Asegura que los elementos usen flexbox */
+        flex-direction: column; /* En pantallas pequeñas, las habitaciones se apilan una debajo de otra */
+        align-items: center; /* Centra los elementos dentro de la fila */
+    }
+    
+    .h4-div-box {
+        font-size: 1.4rem;
+        text-align: center; /* Centra el texto del título */
+    }
+    
+    .boton-ver-mas { 
+        display: inline-block; /* Cambia a inline-block para facilitar el centrado */
+        margin: 10px auto; /* Centra el botón horizontalmente */
+        padding: 7px 50px;
+        text-align: center;
+    }
+
+    .estrella-marina {
+        position: absolute; /* Posiciona el div de forma absoluta */
+        right: 1rem; /* Lo alinea a la derecha */
+        transform: translateY(2680%); /* Ajusta para que esté exactamente centrado verticalmente */
+        width: 100px; 
+        height: auto; 
+      }
+
+      .carousel {
+        width: 100%;
+        max-width: 520px;
+        margin: 5px
+    }
+    
+    .carousel-img {
+        min-width: 100%;
+        height: 350px;
+    }
+    
+    .h4-div-box{
+        font-size: 1.4rem;
+    
+    }
+    
+.parrafo-nosotros-pop-up{ 
+    padding-top: 20px;
+} 
+    
+.close-button-2 {
+    top: 30px;
+    left: 500px;
+
+}
+
+}
+
+
+ @media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .Fondo-habitaciones {
+        margin-top: 2rem;
+        height: 2000px;
+        width: 100%;
+    }
+    
+    h3 { font-size: 2rem;
+        text-align: center;
+    }
+
+    
+    .div-box {
+        padding: 10px;
+        max-width: 600px;
+        padding-bottom: 2rem;    
+    }
+    
+    .imagen-habitaciones {
+        height: 300px; /* Ajusta la altura proporcionalmente según el ancho */
+    }
+    
+    .seccion-contenido-habitaciones {
+        display: flex; /* Asegura que los elementos usen flexbox */
+        flex-direction: column; /* En pantallas pequeñas, las habitaciones se apilan una debajo de otra */
+        align-items: center; /* Centra los elementos dentro de la fila */
+    }
+    
+    .h4-div-box {
+        font-size: 1.6rem;
+    }
+    
+
+    .estrella-marina {
+        position: absolute; /* Posiciona el div de forma absoluta */
+        right: 1rem; /* Lo alinea a la derecha */
+        transform: translateY(3320%); /* Ajusta para que esté exactamente centrado verticalmente */
+        width: 100px; 
+        height: auto; 
+      }
+
+      .carousel {
+        width: 100%;
+        max-width: 670px;
+    }
+    
+    .carousel-img {
+        height: 400px;
+    }
+    
+.close-button-2 {
+    top: 35px;
+    left: 650px;
+
+}
+ }
+    
+  /* Fin de nuestras habitaciones*/
+
+
+/* Estilos para nuestros servicios */
+
+.custom-carousel {
+    padding: 0.3rem;
+    border: 2px solid #63C1C3; 
+    border-radius: 3px;
+  }
+  
+  .carousel-inner img {
+    width: 60%; 
+    height: 500px; 
+    object-fit: cover; 
+  }
+  
+  .carousel-inner img.custom-size {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover;
+  }
+
+  .list-unstyled {
+    list-style-type: circle;
+
+  }
+
+  .mb-3{
+    color:#464646 ;
+  }
+
+  #servicios ul li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #464646;
+    margin-bottom: 5px; 
+  }
+
+  .otro-margin{
+    margin-left: -2rem;
+    margin-top: 3rem;
+  }
+
+  .review-gallery {
+    overflow: hidden; /* Oculta el contenido que sale del contenedor */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin-top: 6rem;
+    margin-bottom: -3rem;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 50px; /* Espacio entre imágenes */
+    animation: scroll 30s linear infinite; /* Animación de desplazamiento */
+    width: calc(300px * 8 + 50px * 8); /* Ajusta el ancho del contenedor para incluir imágenes + espacios */
+}
+
+.gallery-container img {
+    width: 300px; /* Define el ancho de todas las imágenes */
+    height: 180px; /* Define la altura de todas las imágenes */
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan de tamaño */
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scroll {
+    from {
+        transform: translateX(0); /* Comienza desde la posición inicial */
+    }
+    to {
+        transform: translateX(-50%); /* Desplaza la mitad del contenido duplicado */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    
+      .list-unstyled {
+        list-style-type: circle;
+        margin-left: 2rem;
+    
+      }
+    
+      .mb-3{
+        color:#464646 ;
+        margin-left: 1rem;
+      }
+    
+      #servicios ul li {
+        font-size: 1.2rem;
+
+        margin-bottom: 10px; 
+      }
+    
+      .otro-margin{
+        margin-top: 0px;
+        margin-bottom: 3rem;
+      }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .list-unstyled {
+        list-style-type: circle;
+        margin-left: 2rem;
+    
+      }
+    
+      .mb-3{
+        color:#464646 ;
+        margin-left: 1rem;
+      }
+    
+      #servicios ul li {
+        font-size: 1.2rem;
+
+        margin-bottom: 10px; 
+      }
+    
+      .otro-margin{
+        margin-top: 0px;
+        margin-bottom: 3rem;
+      }
+
+}
+
+ /* Fin de estilos para nuestros servicios */
+
+/* Video */
+
+ .section-video{
+    height: 100vh;
+    width: 100%;
+ }
+
+ .video-centered {
+    display: block; /* Asegura que el video sea un bloque para poder centrarlo */
+    margin: 0 auto; /* Centra el video horizontalmente */
+    height: 80%; /* Mantiene la proporción original de la imagen */
+    border: 2px solid #00bfae; /* Borde verde agua */
+    border-radius: 3px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    padding: 0.5rem;
+}
+
+/* Fin video */
+
+/* Sobre la ubicacion */
+
+
+.background-marron {
+    background-image: url(../img/fondo-marron-final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 12rem;
+    height: 130vh;
+    width: 100%;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.titulo-negro{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #464646;
+    line-height: 1.6;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+.negro{
+    font-weight: 600;
+}
+
+.frame-mapa{
+    margin-top: 1rem;
+    width: 94%;
+    margin-left: 2rem;
+    border: 7px solid #ffffff;
+}
+
+.menos-margin{
+    margin-bottom:20px !important; 
+}
+
+.dibujo-concha {
+    position: absolute;
+    left: 85%; /* Centra la imagen horizontalmente */
+    transform: translateY(188px); /* Ajuste preciso para centrar */
+}
+
+.dibujo-concha img {
+    max-width: 60%; /* Tamaño más pequeño de la imagen */
+    height: auto; /* Mantiene la proporción */
+}
+
+@media only screen and (max-width: 600px) {
+
+    .background-marron {
+        height: 145vh;
+        margin-bottom: 3rem;
+    }
+    
+    .titulo-negro{
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: #464646;
+        line-height: 1.6;
+        text-align: center;
+        
+    }
+    .negro{
+        font-weight: 600;
+    }
+    
+    .frame-mapa{
+        margin-top: 1rem;
+        width: 90%;
+    }
+    
+    
+    .dibujo-concha {
+        position: absolute;
+        left: 85%; /* Centra la imagen horizontalmente */
+        transform: translateY(200px); /* Ajuste preciso para centrar */
+    }
+    
+    .dibujo-concha img {
+        max-width: 85%; /* Tamaño más pequeño de la imagen */
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .background-marron {
+        height: 145vh;
+        margin-bottom: 1rem;
+    }
+  
+    .titulo-negro{
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: #464646;
+        line-height: 1.6;
+        text-align: center;
+        
+    }
+    .negro{
+        font-weight: 600;
+    }
+    
+    .frame-mapa{
+        margin-top: 1rem;
+        width: 90%;
+    }
+    
+    
+    .dibujo-concha {
+        position: absolute;
+        left: 85%; /* Centra la imagen horizontalmente */
+        transform: translateY(200px); /* Ajuste preciso para centrar */
+    }
+    
+    .dibujo-concha img {
+        max-width: 85%; /* Tamaño más pequeño de la imagen */
+    }
+}
+
+/* Fin sobre la ubicacion */
+
+/* Sobre la guia turistica */
+
+.seccion-contenido-nueva {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.texto-lado-izquierdo {
+    width: 45%;
+    margin-right: 2rem;
+}
+
+.texto-lado-izquierdo h3 {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #464646;
+    margin-bottom: 2rem;
+    margin-bottom: 3REM;
+}
+
+.texto-lado-izquierdo h4 {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #464646;
+    margin-bottom: 1rem;
+}
+
+.texto-lado-izquierdo p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.texto-lado-izquierdo ul {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #464646;
+    margin-bottom: 2rem;
+    list-style-type:circle;
+    margin-left: 1.1REM;
+}
+
+.texto-lado-izquierdo ul li {
+    margin-bottom: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #464646;
+}
+
+.boton-ver-mas {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #464646;
+    background-color: #EBFBFB;
+    border: 1px solid rgb(125, 199, 184);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton-ver-mas:hover {
+    background-color: #63C1C3;
+}
+
+.contenedor-imagenes-nueva {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imagen-superpuesta-nueva {
+    width: 45%;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    position: absolute;
+    transition: transform 0.3s;
+    border: 6px solid white;
+}
+
+.imagen1-nueva {
+    top: -18rem;
+    left: 5rem;
+    z-index: 2;
+}
+
+.imagen2-nueva {
+    top: -9rem;
+    left: 22rem;
+    z-index: 1;
+}
+
+.imagen-ballena {
+    top: -21rem;
+    left: 16rem;
+    z-index: 3; /* Para que esté sobre las otras imágenes */
+    width: 50%;
+    position: absolute;
+    border: none; /* Sin borde blanco */
+}
+
+@media only screen and (max-width: 600px) {
+
+    .seccion-contenido-nueva {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    
+    .texto-lado-izquierdo {
+        width: 100%;
+    }
+
+    .imagen1-nueva {
+        display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+
+    }
+    
+    .imagen2-nueva {
+        display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+
+    }
+    
+    .imagen-ballena {
+        display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+    }
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .seccion-contenido-nueva {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    
+    .texto-lado-izquierdo {
+        width: 100%;
+    }
+
+    .imagen1-nueva {
+        display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+
+    }
+    
+    .imagen2-nueva {
+        display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+
+    }
+    
+    .imagen-ballena {
+        display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+    }
+}
+
+
+
+/* Fin sobre la guia turistica */
+
+/* Fin de estilos para main */
+
+/* Footer */
+.footer {
+    background-color: #e7deda55;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 0.5px solid #63C1C3;
+}
+
+.footer-columna {
+    width: 30%;
+}
+
+.footer-columna a {
+    display: block;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-columna a:hover {
+    color: #63C1C3;
+}
+
+.footer-logo {
+    max-width: 130px;
+    height: auto;
+}
+
+.footer .izquierda {
+    text-align: left;
+}
+
+.footer .central {
+    text-align: center;
+}
+
+.footer .derecha {
+    text-align: right;
+}
+
+/* Fin footer */
+
+/* Estilo para el ícono de WhatsApp */
+.whatsapp-icon {
+    position: fixed;  /* Fija el ícono en la pantalla */
+    bottom: 60px;     /* Lo posiciona a 20px desde la parte inferior */
+    right: 20px;      /* Lo posiciona a 20px desde la parte derecha */
+    z-index: 9999;    /* Asegura que el ícono esté por encima de otros elementos */
+    width: 80px;      /* Ajustamos el tamaño del ícono */
+    height: 80px;     /* Ajustamos el tamaño del ícono */
+    transition: bottom 0.3s ease-in-out; /
+}
+
+/* Estilo para la imagen dentro del ícono de WhatsApp */
+.whatsapp-icon img {
+    width: 100%;  /* Hace que la imagen se ajuste al contenedor */
+    height: 100%; /* Hace que la imagen se ajuste al contenedor */
+}
+
+
+/* Guia turistica */
+
+/* General Section Styles */
+
+.custom-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.custom-section .content {
+    flex: 1; 
+    padding-right: 20px; 
+    
+}
+
+.custom-section h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.custom-section h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.custom-section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.image-right {
+    flex: 1; 
+    max-height: calc(95% - 60px); 
+    object-fit: cover;
+    padding: 20px; 
+    box-sizing: border-box; 
+    border-radius: 2rem;
+}
+
+
+
+.dark-background {
+    background-color: #5e848f;
+    color: white;
+}
+
+
+    
+.image-left {
+    flex: 1;
+    max-width: 550px; /* Altura máxima para el contenedor de la imagen */
+    object-fit: cover; /* Hace que la imagen se recorte para llenar el contenedor */
+    padding: 08px;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    overflow: hidden; /* Asegura que no haya desbordamiento de la imagen */
+}
+
+/* Imagen dentro del contenedor */
+.image-left img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Hace que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Mantiene la imagen cubriendo todo el área, recortando si es necesario */
+}
+
+
+.scroll-spacer {
+    height: 100vh;
+  }
+  
+  .hero-section {
+    position: sticky;
+    top: 0;
+  }
+  
+  .hero-wrapper {
+    margin-bottom: -100vh;
+  }
+  
+  .content-section {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .ultimo {
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .footer-wrapper {
+    margin-top: -100vh;
+  }
+  
+  .cta-wrapper {
+    height: 300vh;
+    margin-block: -100vh;
+  }
+  
+  .cta-section {
+    position: sticky;
+    top: 0;
+  }
+
+
+.content h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #464646;
+    margin: 2rem;
+}
+
+.content p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #464646;
+    line-height: 1.6;
+    margin-left: 2rem;
+
+
+}
+
+.content h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #464646;
+    margin-left: 2rem;
+    margin-bottom: 1.2rem;
+
+}
+.content ul li {
+    margin-left: 3rem;
+    margin-right: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #464646;
+    line-height: 1.6;
+    margin-left: 2rem;
+}
+
+.blanco{
+    color: #ffffff !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .custom-section {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; 
+        background-color: #ffffff; 
+        padding: 20px; 
+        box-sizing: border-box; 
+        margin-top: 2.5rem;
+    }
+    
+    
+    .custom-section h2 {
+        font-size: 1.6rem !important;
+        margin-top: 2rem;
+    }
+
+    
+    .image-right {
+        flex: 1; 
+        max-height: 450px; 
+        object-fit: cover;
+        padding: 20px; 
+        box-sizing: border-box; 
+        border-radius: 2rem;
+    }
+
+    .list-unstyled .blanco{
+        font-size: 1rem;
+    }
+    
+    
+    .dark-background {
+        background-color: #5e848f;
+        color: white;
+    }
+        
+    .image-left {
+        display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+
+    }
+      
+      .content-section {
+        position: relative;
+        z-index: 2;
+      }
+      
+      .ultimo {
+        position: sticky;
+        bottom: 0;
+      }
+      
+      .footer-wrapper {
+        margin-top: -100vh;
+      }
+      
+      .cta-wrapper {
+        height: 300vh;
+        margin-block: -100vh;
+
+      }
+      
+      .cta-section {
+        position: sticky;
+        top: 80px;
+      }
+    .content ul li{ 
+        font-size: 1rem !important;
+
+    }
+    
+   .no-se-ve{ 
+
+    display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+
+    }
+    .content h1 {
+        font-family: "Merriweather", serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #464646;
+        margin: 2rem;
+    }
+    
+    .content p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #464646;
+        line-height: 1.6;
+        margin-left: 2rem;
+    
+    
+    }
+    
+    .content h2 {
+        font-family: "Merriweather", serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #464646;
+        margin-left: 2rem;
+        margin-bottom: 1.2rem;
+    
+    }
+    .scroll-spacer {
+        height: 100vh;
+      }
+.otra-medida-para-spacer{
+    height: 2vh !important;
+ }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .custom-section {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; 
+        background-color: #ffffff; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+    
+    
+    .custom-section h2 {
+        font-size: 2rem !important;
+        margin-top: 2rem;
+    }
+
+    
+    .image-right {
+        flex: 1; 
+        max-height: 80%; 
+        object-fit: cover;
+        padding: 20px; 
+        box-sizing: border-box; 
+        border-radius: 2rem;
+    }
+
+    .list-unstyled .blanco{
+        font-size: 1rem;
+    }
+    
+    
+    .dark-background {
+        background-color: #5e848f;
+        color: white;
+    }
+        
+    .image-left {
+        display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+
+    }
+      
+      .content-section {
+        position: relative;
+        z-index: 2;
+      }
+      
+      .ultimo {
+        position: sticky;
+        bottom: 0;
+      }
+      
+      .footer-wrapper {
+        margin-top: -100vh;
+      }
+      
+      .cta-wrapper {
+        height: 300vh;
+        margin-block: -100vh;
+
+      }
+      
+      .cta-section {
+        position: sticky;
+        top: 80px;
+      }
+    .content ul li{ 
+        font-size: 1rem !important;
+
+    }
+    
+   .no-se-ve{ 
+
+    display: none; /* Oculta la imagen de la ballena en pantallas pequeñas */
+
+    }
+    .content h1 {
+        font-family: "Merriweather", serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #464646;
+        margin: 2rem;
+    }
+    
+    .content p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #464646;
+        line-height: 1.6;
+        margin-left: 2rem;
+    
+    
+    }
+    
+    .content h2 {
+        font-family: "Merriweather", serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #464646;
+        margin-left: 2rem;
+        margin-bottom: 1.2rem;
+    
+    }
+    .scroll-spacer {
+        height: 100vh;
+      }
+.otra-medida-para-spacer{
+    height: 4vh !important;
+ }
+}
+
+
+/* Fin general section Styles */
+

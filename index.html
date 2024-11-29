@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huinca-Che</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Header -->
+
+    <header class="background-foto">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img class="logo-img logo-blanco" src="./img/logo-blanco.png" alt="Logo blanco de Hostel Huinca-Che">
+                <img class="logo-img logo-negro" src="./img/logo-negro.png" alt="Logo negro de Hostel Huinca-Che">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item me-3">
+                         <a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item me-3">
+                         <a class="nav-link" href="#habitaciones">Habitaciones</a>
+                      </li>
+                      <li class="nav-item me-3">
+                          <a class="nav-link" href="#servicios">Servicios</a>
+                      </li>
+                      <li class="nav-item me-3">
+                          <a class="nav-link" href="#ubicacion">Ubicación</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/./guia-turistica.html">Guía turística</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="contenedor-texto">
+            <h1 class="texto-bienvenida">Bienvenidos a</h1>
+            <h2 class="texto-huinca">HüINCA,CHE</h2>
+        </div>
+    </header>
+    
+<!-- Sobre nosotros --> 
+    
+   <main> 
+    <section class="seccion-contenido"id="sobre-nosotros">
+            <div class="contenedor-imagenes">
+                <img src="./img/cama.png" alt="foto de una habitacion familiar" class="imagen-superpuesta imagen1">
+                <img src="./img/patio-5.png" alt="Foto del patio del hostel donde se obsevan mesas y sillas" class="imagen-superpuesta imagen2">
+                <img src="./img/ola.png" alt="dibujo de una ola" class="imagen-superpuesta imagen3">
+            </div>
+            <div class="texto-lado-derecho">
+                <h2>Hostel Hüinca,Che</h2>
+                <p>Un espacio pensado para los viajeros que buscan explorar Las Grutas y la naturaleza de la Patagonia en un ambiente cálido y amigable. Ubicados estratégicamente, brindamos una experiencia única de convivencia y aventura.</p>
+                <button class="boton-ver-mas" id="verMasBtn">Ver más</button>        </div>
+    </section>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <span class="close-button" id="closeBtn">×</span>
+          <div class="popup-grid">
+              <div class="small-img"><img src="./img/foto-grupal1.JPG" alt="Imagen 1"></div>
+              <div class="large-img"><img src="./img/foto-grupal2.JPG" alt="Imagen Central"></div>
+              <div class="small-img"><img src="./img/foto-grupal4.JPG" alt="Imagen 2"></div>
+              <div class="small-img"><img src="./img/foto-grupal5.JPG" alt="Imagen 3"></div>
+              <div class="small-img"><img src="./img/foto-grupal6.JPG" alt="Imagen 4"></div>
+          </div>
+          <h1 class="hostel-titulo-popup"> Hostel Huincha-Che: Tu Hogar en Las Grutas </h1>
+          <p class="parrafo-nosotros-pop-up"> Ubicado en el corazón de Las Grutas, Río Negro, el Hostel Huincha-Che fue creado con amor y dedicación por Moni, su fundadora, quien soñó con un espacio donde los viajeros se sintieran como en casa. <br> Aquí encontrarás habitaciones cómodas, áreas comunes para compartir y una atmósfera única que invita a conectar con otros viajeros y la belleza natural de la región. <br>
+            
+            Huincha-Che es más que un lugar para dormir; es un espacio lleno de calidez, ubicado cerca de las hermosas playas de Las Grutas. <br> Ven y sé parte de nuestra familia viajera. ¡Te esperamos!</p>
+      </div>
+  </div>
+
+<!-- Habitaciones -->
+
+  <section class="Fondo-habitaciones" id="habitaciones">
+    <h3 class="otra-medida-para-H3-hab">Nuestras habitaciones</h3>
+    <div class="seccion-contenido-habitaciones">
+
+        <div class="div-box">
+            <img class="imagen-habitaciones" src="./img/familiar.png" alt="Familiar">
+            <h4 class="h4-div-box">Familiar</h4>
+            <p class="habitaciones-texto">Habitación espaciosa ideal para familias, con todas las comodidades que necesitas.</p>
+            <button class="boton-ver-mas" onclick="abrirPopup('popup-habitacion-familiar')">Ver más</button>
+        </div>
+
+        <div class="div-box">
+            <img class="imagen-habitaciones" src="./img/compartida-1.png" alt="Privada">
+            <h4 class="h4-div-box">Privada</h4>
+            <p class="habitaciones-texto">Espacio privado perfecto para parejas o viajeros que desean mayor privacidad.</p>
+            <button class="boton-ver-mas" onclick="abrirPopup('popup-habitacion-privada')">Ver más</button>
+        </div>
+
+        <div class="div-box">
+            <img class="imagen-habitaciones" src="./img/compartida.png" alt="Compartida">
+            <h4 class="h4-div-box">Compartida</h4>
+            <p class="habitaciones-texto">Habitación económica ideal para aventureros que buscan conocer gente nueva.</p>
+            <button class="boton-ver-mas" onclick="abrirPopup('popup-habitacion-compartida')">Ver más</button>
+        </div>
+    </div>
+</section>
+
+<div id="popup-habitacion-familiar" class="popup">
+    <div class="popup-content">
+      <span class="close-button-2" onclick="cerrarPopup('popup-habitacion-familiar')">×</span>          
+      <div class="carousel">  
+      <div class="carousel-images">
+                <img src="./img/comedor-1.png" alt="Familiar 1" class="carousel-img">
+                <img src="./img/comedor-2.png" alt="Familiar 2" class="carousel-img">
+                <img src="./img/comedor-3.png" alt="Familiar 3" class="carousel-img">
+            </div>
+            <button class="carousel-control prev" onclick="moverCarrusel(-1, 'popup-habitacion-familiar')">‹</button>
+            <button class="carousel-control next" onclick="moverCarrusel(1, 'popup-habitacion-familiar')">›</button>
+        </div>
+        <p class="parrafo-nosotros-pop-up">Ideal para disfrutar en grupo o con tu familia, esta habitación combina comodidad y privacidad. Ofrece baño privado, terraza con vista al mar y desayuno incluido. Cochera sustentable sujeta a disponibilidad.</p>
+        <a href="https://wa.me/5493364585977?text=Hola%2C%20me%20interesa%20hospedarme%20en%20tu%20hostel%20en%20una%20habitaci%C3%B3n%20familiar.%20%C2%BFPodr%C3%ADas%20darme%20informaci%C3%B3n%20sobre%20los%20precios%20para%20quedarme%20desde%20[FECHA%20INICIO]%20hasta%20[FECHA%20FIN]%3F%20%C2%A1Gracias%21" 
+        target="_blank" 
+        class="boton-ver-mas">Consultar precios </a>
+         </div>
+</div>
+
+<div id="popup-habitacion-privada" class="popup">
+    <div class="popup-content">
+        <span class="close-button-2" onclick="cerrarPopup('popup-habitacion-privada')">×</span>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="./img/compartida-1.png" alt="Privada 1" class="carousel-img">
+                <img src="./img/compartida-2.png" alt="Privada 2" class="carousel-img">
+                <img src="./img/bano.png" alt="Privada 3" class="carousel-img">
+            </div>
+            <button class="carousel-control prev" onclick="moverCarrusel(-1, 'popup-habitacion-privada')">‹</button>
+            <button class="carousel-control next" onclick="moverCarrusel(1, 'popup-habitacion-privada')">›</button>
+        </div>
+        <p class="parrafo-nosotros-pop-up">Perfecta para quienes buscan tranquilidad, esta habitación privada incluye baño propio, terraza con vista al mar y desayuno. Cochera sustentable disponible según cupo.</p>
+        <a href="https://wa.me/5493364585977?text=Hola%2C%20me%20interesa%20hospedarme%20en%20tu%20hostel%20en%20una%20habitaci%C3%B3n%20privada.%20%C2%BFPodr%C3%ADas%20darme%20informaci%C3%B3n%20sobre%20los%20precios%20para%20quedarme%20desde%20[FECHA%20INICIO]%20hasta%20[FECHA%20FIN]%3F%20%C2%A1Gracias%21" 
+        target="_blank" 
+        class="boton-ver-mas"> Consultar precios </a>
+         </div>
+</div>
+
+<div id="popup-habitacion-compartida" class="popup">
+    <div class="popup-content">
+        <span class="close-button-2" onclick="cerrarPopup('popup-habitacion-compartida')">×</span>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="./img/bano.png" alt="Compartida 1" class="carousel-img">
+                <img src="./img/bano-1.png" alt="Compartida 2" class="carousel-img">
+                <img src="./img/desayuno.png" alt="Compartida 3" class="carousel-img">
+            </div>
+            <button class="carousel-control prev" onclick="moverCarrusel(-1, 'popup-habitacion-compartida')">‹</button>
+            <button class="carousel-control next" onclick="moverCarrusel(1, 'popup-habitacion-compartida')">›</button>
+        </div>
+        <p class="parrafo-nosotros-pop-up">La opción para viajeros que disfrutan de compartir experiencias. Cuenta con baño privado, terraza con vistas al mar y desayuno incluido. Cochera sustentable disponible a solicitud.</p>
+        <a href="https://wa.me/5493364585977?text=Hola%2C%20me%20interesa%20hospedarme%20en%20tu%20hostel%20en%20una%20habitaci%C3%B3n%20compartida.%20%C2%BFPodr%C3%ADas%20darme%20informaci%C3%B3n%20sobre%20los%20precios%20para%20quedarme%20desde%20[FECHA%20INICIO]%20hasta%20[FECHA%20FIN]%3F%20%C2%A1Gracias%21" 
+        target="_blank" 
+        class="boton-ver-mas">Consultar precios </a>
+     
+     
+    </div>
+</div>
+
+<div class="estrella-marina">
+    <img src="./img/estrella.png" alt="dibujo de una estrella marina">
+</div>
+
+<!-- Servicios -->
+
+<section class="container my-5" id="servicios">
+    <div class="row">
+        <div class="col-md-6 d-flex flex-column justify-content-start">
+        <h3 class="otro-margin">Nuestros servicios</h3>
+        <h4 class="mb-3 otro-margin">Contamos con</h4>
+        <ul class="list-unstyled ">
+          <li>Desayuno</li>
+          <li>Amplio lobby con WiFi para desayunar, trabajar y disfrutar del momento.</li>
+          <li>Terraza</li>
+          <li>Aire acondicionado</li>
+          <li>Televisión</li>
+          <li>Estacionamiento sujeto a disponibilidad</li>
+          <li>Recepción 24 h</li>
+          <li>Guardado de equipaje</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-bs-ride="carousel">          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          </div>
+  
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/comedor-1.png" class="d-block w-100" alt="Hostel Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/comedor-2.png" class="d-block w-100" alt="Hostel Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/comedor-3.png" class="d-block w-100" alt="Hostel Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/comedor-4.png" class="d-block w-100" alt="Hostel Image 4">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/comedor-5.png" class="d-block w-100" alt="Hostel Image 5">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/patio-2.png" class="d-block w-100" alt="Hostel Image 6">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/patio-3.png" class="d-block w-100" alt="Hostel Image 7">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/patio.png" class="d-block w-100" alt="Hostel Image 8">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/terraza.png" class="d-block w-100" alt="Hostel Image 9">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/desayuno.png" class="d-block w-100" alt="Hostel Image 10">
+            </div>
+          </div>
+  
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Reviews -->
+
+  <div class="review-gallery">
+    <div class="gallery-container">
+        <img src="./img/review-1.png" alt="">
+        <img src="./img/review-2.png" alt="">
+        <img src="./img/review-3.png" alt="">
+        <img src="./img/review-4.png" alt="">
+        <img src="./img/review-1.png" alt="">
+        <img src="./img/review-2.png" alt="">
+        <img src="./img/review-3.png" alt="">
+        <img src="./img/review-4.png" alt="">
+    </div>
+</div>
+
+<!-- Video -->
+
+<section class="section-video">
+    <h3 class="otra-medida-para-H3-hab">Tour virtual</h3>
+    <video src="./video/08c82d5c-344e-431f-8a0a-474ae8f5a30a.mp4" class="video-centered" controls></video>
+</section>
+
+<!-- Ubicacion -->
+
+<div class="dibujo-concha">
+    <img src="./img/dibujo-concha.png" alt="Concha dibujo">
+</div>
+
+<section class="background-marron" id="ubicacion">
+<h3 class="otra-medida-para-H3-hab menos-margin bottom-margin">Nos ubicamos en</h3>
+<p class="titulo-negro negro">Nos ubicamos en Dunas 250, R8521 Las Grutas, Río Negro, Argentina.</p>
+<p class="titulo-negro">En el corazón de Las Grutas, nuestra ubicación ofrece un acceso fácil y cómodo a todas las principales atracciones turísticas de la zona, permitiendo a nuestros huéspedes disfrutar de la tranquilidad y belleza natural de la región. Con un ambiente cálido y acogedor, te invitamos a descubrir lo mejor de este paraíso costero. ¡Te esperamos!</p>
+<iframe class="frame-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.2457785494444!2d-65.07354262425686!3d-40.800592571380484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95fa3317cd5ec6e5%3A0xf59df98a8db8d72!2sHostel%20and%20Hotel%20HuincaChe!5e0!3m2!1ses!2snl!4v1730891153649!5m2!1ses!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- Guia turistica -->
+
+<section class="seccion-contenido-nueva">
+    <div class="texto-lado-izquierdo">
+        <h3 class="titulo-guia">Guía turística</h3>
+        <h4>Sobre Las Grutas</h4>
+        <p>Disfruta de la tranquilidad y belleza de Las Grutas, un lugar ideal para relajarte y disfrutar de la naturaleza. Nuestra ubicación te permite explorar la zona de la Patagonia de una forma única y auténtica.</p>
+        <h4>Actividades recomendadas:</h4>
+        <ul class="list-unstyled">
+            <li>Visitas a la playa</li>
+            <li>Paseos en bote por el Golfo San Matías</li>
+            <li>Excursiones a la fauna local</li>
+            <li>Caminatas por los senderos de la zona</li>
+            <li>Turismo cultural en San Antonio Oeste</li>
+        </ul>
+        
+        <a href="./pages/prueba.html" class="boton-ver-mas">Ver más</a>
+
+    </div>
+
+    <div class="contenedor-imagenes-nueva">
+        <img src="./img/playa-1.png" alt="Vista panorámica de Las Grutas" class="imagen-superpuesta-nueva imagen1-nueva">
+        <img src="./img/playa-4.png" alt="Foto de un atardecer en la playa" class="imagen-superpuesta-nueva imagen2-nueva">
+        <img src="./img/ballena.png" alt="Dibujo de una ballena" class="imagen-ballena">
+    </div>
+</section>
+   
+</main>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-columna izquierda">
+      <a href="#sobre-nosotros">Sobre Nosotros</a>
+      <a href="#habitaciones">Habitaciones</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="./pages/./guia-turistica.html">Guía de Viaje</a>
+    </div>
+    
+    <div class="footer-columna central">
+        <img src="./img/logo-negro.png" alt="Logo del Hostel Huinca-Che" class="footer-logo">
+    </div>
+    
+    <div class="footer-columna derecha">
+        <a href="https://wa.me/5493364585977" target="_blank">
+        <a href="https://maps.app.goo.gl/P8QkRjN2LSEefEkV6" target="_blank">Las Dunas 290</a>
+        <a href="https://www.facebook.com/share/1B475z2yDq/?mibextid=LQQJ4d" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/casahuincache?igsh=MW9uNTFoa2kzcjZ6Nw==" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+<!-- Whatsapp -->
+
+<div id="whatsapp-icon" class="whatsapp-icon">
+    <a href="https://wa.me/5493364585977" target="_blank">
+        <img src="./img/WhatsApp.svg.webp" alt="WhatsApp Logo">
+    </a>
+</div>
+
+<!-- Java -->
+
+<script src="./java/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
