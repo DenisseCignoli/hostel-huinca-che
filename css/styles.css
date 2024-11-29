@@ -717,7 +717,7 @@ a.boton-ver-mas:hover {
     position: absolute; /* Posiciona el div de forma absoluta */
     top: 50%; /* Centra el div verticalmente */
     right: 5rem; /* Lo alinea a la derecha */
-    transform: translateY(1490%); /* Ajusta para que esté exactamente centrado verticalmente */
+    transform: translateY(1410%); /* Ajusta para que esté exactamente centrado verticalmente */
     width: 150px; 
     height: auto; 
   }
