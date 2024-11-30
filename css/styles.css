@@ -556,7 +556,7 @@ margin-bottom: 5rem;}
     background-repeat: no-repeat;
     background-size: cover; 
     margin-top: 2rem;
-    height: 120vh;
+    height: 115vh;
     width: 100%;
     margin-bottom: 5rem; 
 } 
@@ -578,11 +578,13 @@ margin-left: 2rem;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 430px;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 1.5rem;
+    margin: 15px;
+    
 
 }
 
@@ -717,18 +719,18 @@ a.boton-ver-mas:hover {
 
 .estrella-marina {
     position: absolute; /* Posiciona el div de forma absoluta */
-    top: 50%; /* Centra el div verticalmente */
-    right: 5rem; /* Lo alinea a la derecha */
-    transform: translateY(1410%); /* Ajusta para que esté exactamente centrado verticalmente */
-    width: 150px; 
-    height: auto; 
-  }
-  
-  .estrella-marina img {
-    width: 100%;
+    top: 330%; /* Centra el div verticalmente */
+    right: 5vw; /* Usa 'vw' para hacerlo relativo al ancho de la ventana */
+    transform: translateY(-50%); /* Asegura un centrado vertical exacto */
+    width: 10vw; /* Ajusta el ancho en función del tamaño de la ventana */
+    max-width: 150px; /* Limita el tamaño máximo */
+    height: auto; /* Conserva la proporción */
+}
 
-  }
-
+.estrella-marina img {
+    width: 100%; /* Se ajusta al contenedor */
+    height: auto; /* Conserva la proporción */
+}
  .habitaciones-texto{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -1393,6 +1395,40 @@ a.boton-ver-mas:hover {
     text-align: right;
 }
 
+@media only screen and (max-width: 500px) {
+    .footer {
+        padding: 10px;
+    }
+    
+    
+    .footer-columna a {
+
+        color: #2c2c2c;
+    }
+    
+    .footer-logo {
+        max-width: 70px;
+        height: auto;
+    }
+
+}
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+    .footer {
+        padding: 10px;
+    }
+    
+    
+    .footer-columna a {
+
+        color: #2c2c2c;
+    }
+    
+    .footer-logo {
+        max-width: 90px;
+        height: auto;
+    }  
+}
+
 /* Fin footer */
 
 /* Estilo para el ícono de WhatsApp */
@@ -1625,7 +1661,7 @@ a.boton-ver-mas:hover {
       }
       
       .cta-wrapper {
-        height: 320vh;
+        height: 300vh;
         margin-block: -100vh;
 
       }
@@ -1794,4 +1830,3 @@ a.boton-ver-mas:hover {
 
 
 /* Fin general section Styles */
-
