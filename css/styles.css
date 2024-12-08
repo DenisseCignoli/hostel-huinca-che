@@ -183,6 +183,8 @@ margin-bottom: 5rem;}
     }
 }
 
+
+
 /* Fin de estilos para el texto de Bienvenidos */
 
   /* Fin del Header */
@@ -547,6 +549,90 @@ margin-bottom: 5rem;}
 }
 
 
+@media only screen and (min-width: 1025px) {
+    .seccion-contenido {
+        flex-direction: column; /* Cambia a una columna en tablets */
+        align-items: center;
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px;
+    }
+
+    .contenedor-imagenes {
+        width: 100%; /* Reduce el ancho del contenedor */
+        display: flex;
+        flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .imagen-superpuesta {
+        width: 60%; /* Reduce el tamaño de las imágenes */
+        position: static; /* Quita el posicionamiento absoluto */
+        max-width: 250px;
+        margin-bottom: 30px;
+        
+    }
+    .imagen3 {
+        display: none; /* Oculta esta imagen en dispositivos móviles */
+    }   
+
+    .texto-lado-derecho {
+        width: 98%; /* Ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+    }
+
+    .texto-lado-derecho h2 {
+        font-size: 1.8rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .texto-lado-derecho p {
+        font-size: 1rem; /* Reduce ligeramente el tamaño del texto */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+
+    .boton-ver-mas {
+        padding: 8px 30px; /* Reduce el tamaño del botón */
+        font-size: 0.9rem;
+    }
+
+    .popup-grid {
+        gap: 5px;    }
+    
+
+    .popup-content {
+        margin: 20px;
+    }
+    
+    
+    .popup-grid .small-img img {
+        height: 130px; /* Altura fija para imágenes pequeñas */
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .popup-grid .large-img img {
+        height: 270px; /* Altura personalizada para la imagen central */
+        border-radius: 5px;
+    }
+
+    .parrafo-nosotros-pop-up {
+        font-size: 1rem; /* Reduce ligeramente el tamaño del texto */
+        line-height: 1.4; /* Ajusta el interlineado */
+    }
+
+    .hostel-titulo-popup {
+        font-size: 1.2rem; /* Reduce el tamaño del título */
+    }
+
+    .close-button {
+        top: 25px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    
+}
   /* Fin sobre nosotros*/
 
 /* Nuestras habitaciones*/
@@ -559,6 +645,7 @@ margin-bottom: 5rem;}
     height: 115vh;
     width: 100%;
     margin-bottom: 5rem; 
+    border-bottom: 0.8px solid #00bfae;
 } 
 
 h3{ font-family: "Merriweather", serif;
@@ -578,12 +665,12 @@ margin-left: 2rem;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 380px;
+    max-width: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 1.5rem;
-    margin: 15px;
+    margin: 10px;
     
 
 }
@@ -715,22 +802,6 @@ a.boton-ver-mas:hover {
 }
 
 
-
-
-.estrella-marina {
-    position: absolute; /* Posiciona el div de forma absoluta */
-    top: 330%; /* Centra el div verticalmente */
-    right: 5vw; /* Usa 'vw' para hacerlo relativo al ancho de la ventana */
-    transform: translateY(-50%); /* Asegura un centrado vertical exacto */
-    width: 10vw; /* Ajusta el ancho en función del tamaño de la ventana */
-    max-width: 150px; /* Limita el tamaño máximo */
-    height: auto; /* Conserva la proporción */
-}
-
-.estrella-marina img {
-    width: 100%; /* Se ajusta al contenedor */
-    height: auto; /* Conserva la proporción */
-}
  .habitaciones-texto{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -797,14 +868,6 @@ a.boton-ver-mas:hover {
         text-align: center;
     }
 
-    .estrella-marina {
-        position: absolute; /* Posiciona el div de forma absoluta */
-        right: 1rem; /* Lo alinea a la derecha */
-        transform: translateY(2680%); /* Ajusta para que esté exactamente centrado verticalmente */
-        width: 100px; 
-        height: auto; 
-      }
-
       .carousel {
         width: 100%;
         max-width: 310px;
@@ -851,7 +914,7 @@ a.boton-ver-mas:hover {
         padding: 10px;
         max-width: 600px;
         padding-bottom: 2rem;   
-        margin: 20px; 
+        margin: 10px; 
     }
     
     .imagen-habitaciones {
@@ -867,14 +930,6 @@ a.boton-ver-mas:hover {
     .h4-div-box {
         font-size: 1.6rem;
     }
-    
-
-    .estrella-marina {
-        position: absolute; /* Posiciona el div de forma absoluta */
-        right: 1rem; /* Lo alinea a la derecha */
-        width: 100px; 
-        height: auto; 
-      }
 
       .carousel {
         width: 100%;
@@ -899,7 +954,7 @@ a.boton-ver-mas:hover {
 /* Estilos para nuestros servicios */
 
 .custom-carousel {
-    padding: 0.3rem;
+    padding: 0.5rem;
     border: 2px solid #63C1C3; 
     border-radius: 3px;
   }
@@ -941,8 +996,8 @@ a.boton-ver-mas:hover {
   .review-gallery {
     overflow: hidden; /* Oculta el contenido que sale del contenedor */
     width: 100%; /* Asegura que ocupe todo el ancho */
-    margin-top: 6rem;
-    margin-bottom: -3rem;
+    margin-top: 8rem;
+    margin-bottom: -1rem;
 }
 
 .gallery-container {
@@ -1052,6 +1107,7 @@ a.boton-ver-mas:hover {
     width: 100%;
     margin-bottom: 3rem;
     position: relative;
+    border-bottom: 0.8px solid #00bfae;
 }
 
 .titulo-negro{
