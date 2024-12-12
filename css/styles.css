@@ -548,7 +548,35 @@ margin-bottom: 5rem;}
     }
 }
 
+@media only screen and (min-width: 1025px)  {
+    
+    .imagen-superpuesta {
+        width: 43%; 
+        border-top-left-radius: 17rem;
+        border-top-right-radius: 17rem;   
 
+    }
+    
+    .imagen1 {
+        top: -20rem;
+        left: 1.5rem;
+        z-index: 3; 
+    }
+    
+    .imagen2 {
+        top: -12rem;
+        left: 18rem;
+        z-index: 2;
+    }
+    
+    .imagen3 {
+        top: -22rem;
+        left: 16rem;
+        z-index: 1;
+    }
+    
+
+}
   /* Fin sobre nosotros*/
 
 /* Nuestras habitaciones*/
@@ -863,7 +891,35 @@ a.boton-ver-mas:hover {
 
 }
  }
+
+ @media only screen and (min-width: 1025px)  {
+
+    .Fondo-habitaciones{
+        background-image: url(../img/fondo-marron-final.png);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin-top: 2rem;
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 14rem; 
+    } 
     
+    .otra-medida-para-H3-hab{
+    padding-top: 13rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    }
+    
+    .div-box{
+        max-width: 30rem;
+        margin-top: 3rem;
+        
+    
+    }
+    
+    
+
+ }
   /* Fin de nuestras habitaciones*/
 
 
@@ -988,6 +1044,39 @@ a.boton-ver-mas:hover {
         margin-bottom: 3rem;
       }
 
+}
+
+@media only screen and (min-width: 1025px)  {
+    .custom-carousel {
+        padding: 0.5rem;
+        border: 2px solid #63C1C3; 
+        border-radius: 3px;
+      }
+      
+      .carousel-inner img {
+        width: 100%; 
+        height: 600px; 
+        object-fit: cover; 
+      }
+    
+    
+      .list-unstyled {
+        list-style-type: circle;    
+      }
+    
+      .otro-margin{
+        margin-bottom: 2rem;
+        margin-left: -16rem;
+        margin-top: 3rem;
+      }
+      .review-gallery {
+        overflow: hidden; /* Oculta el contenido que sale del contenedor */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        margin-top: 12rem;
+    }
+    .otro-list-medidas{ margin-left: -14rem;
+
+    }
 }
 
  /* Fin de estilos para nuestros servicios */
@@ -1131,6 +1220,23 @@ a.boton-ver-mas:hover {
         max-width: 85%; /* Tamaño más pequeño de la imagen */
     }
 }
+@media only screen and (min-width: 1025px)  {
+    .background-marron {
+        background-image: url(../img/fondo-marron-final.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 12rem;
+        height: 100vh;
+    }
+    .frame-mapa{
+        margin-top: 1rem;
+        width: 94%;
+        height: 33.5rem;
+        margin-left: 2rem;
+        border: 7px solid #ffffff;
+    }
+}
+
 
 /* Fin sobre la ubicacion */
 
@@ -1156,7 +1262,7 @@ a.boton-ver-mas:hover {
     font-size: 2.5rem;
     color: #464646;
     margin-bottom: 2rem;
-    margin-bottom: 3REM;
+    margin-bottom: 3rem;
 }
 
 .texto-lado-izquierdo h4 {
@@ -1314,6 +1420,42 @@ a.boton-ver-mas:hover {
     }
 }
 
+@media only screen and (min-width: 1025px)  {
+    
+    .imagen-superpuesta-nueva {
+        width: 45%;
+        border-top-left-radius: 17rem;
+        border-top-right-radius: 17rem;
+        position: absolute;
+        transition: transform 0.3s;
+        border: 6px solid white;
+    }
+    
+    .imagen1-nueva {
+        top: -21rem;
+        left: 5rem;
+        z-index: 2;
+    }
+    
+    .imagen2-nueva {
+        top: -12rem;
+        left: 22rem;
+        z-index: 1;
+    }
+    
+    .imagen-ballena {
+        top: -27rem;
+        left: 18rem;
+        z-index: 3; /* Para que esté sobre las otras imágenes */
+        width: 50%;
+        position: absolute;
+        border: none; /* Sin borde blanco */
+    }
+    .titulo-guia {
+        margin-top: -3rem;
+    }
+
+}
 
 
 /* Fin sobre la guia turistica */
