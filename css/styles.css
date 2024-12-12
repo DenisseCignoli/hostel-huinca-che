@@ -548,7 +548,7 @@ margin-bottom: 5rem;}
     }
 }
 
-@media only screen and (min-width: 1025px)  {
+@media only screen and (min-width: 1920px)  {
     
     .imagen-superpuesta {
         width: 43%; 
@@ -892,7 +892,7 @@ a.boton-ver-mas:hover {
 }
  }
 
- @media only screen and (min-width: 1025px)  {
+ @media only screen and (min-width: 1920px)  {
 
     .Fondo-habitaciones{
         background-image: url(../img/fondo-marron-final.png);
@@ -1046,7 +1046,7 @@ a.boton-ver-mas:hover {
 
 }
 
-@media only screen and (min-width: 1025px)  {
+@media only screen and (min-width: 1920px)  {
     .custom-carousel {
         padding: 0.5rem;
         border: 2px solid #63C1C3; 
@@ -1220,7 +1220,7 @@ a.boton-ver-mas:hover {
         max-width: 85%; /* Tamaño más pequeño de la imagen */
     }
 }
-@media only screen and (min-width: 1025px)  {
+@media only screen and (min-width: 1920px)  {
     .background-marron {
         background-image: url(../img/fondo-marron-final.png);
         background-repeat: no-repeat;
@@ -1420,7 +1420,7 @@ a.boton-ver-mas:hover {
     }
 }
 
-@media only screen and (min-width: 1025px)  {
+@media only screen and (min-width: 1920px)  {
     
     .imagen-superpuesta-nueva {
         width: 45%;
